@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title name="nav-title">Pi-Invoicing Docs</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Pi-Invoicing Docs</header>
+        <ul>
+          <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+          <li>
+            <a class="nav-link" href="#Signup_and_Login">Sign up & Login</a>
+          </li>
+          <li><a class="nav-link" href="#Create_invoice">Create Invoice</a></li>
+          <li>
+            <a class="nav-link" href="#Upload_invoice">Upload Invoice</a>
+          </li>
+          <li><a class="nav-link" href="#Remove_invoice">Remove Invoice</a></li>
+          <li><a class="nav-link" href="#Validate_invoice">Validate Invoice</a></li>
+          <li><a class="nav-link" href="#Download_invoice">Download Invoice</a></li>
+          <li>
+            <a class="nav-link" href="#Send_invoice">Send Invoice</a>
+          </li>
+        </ul>
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="Introduction">
+          <header>Introduction</header>
+          <article>
+            <p>
+              Pi-Invoicing is an e-invoicing application that supports:
+              <ul>
+                  <li>Creating invoices</li>
+                  <li>Uploading invoices</li>
+                  <li>Removing invoices</li>
+                  <li>Validating invoices</li>
+                  <li>Downloading invoices</li>
+                  <li>Sending invoices</li>
+              </ul>
+            </p>
+            </ul>
+          </article>
+        </section>
+        <section class="main-section" id="Signup_and_Login">
+          <header>Sign up & Login</header>
+          <article>
+            An account is required to access the Pi-Invoicing functionalities.
+
+            When signing up for an account, please ensure that:
+            <ul>
+                <li>Your email is unique.</li>
+                <li>Your password is at least 6 characters long.</li>
+                <li>Your password consists of alphanumeric characters.</li>
+            </ul>
+            
+            After signing up, you will be prompted to log into your account with the details you registered with.
+
+          </article>
+        </section>
+        <section class="main-section" id="Create_invoice">
+          <header>Create Invoice</header>
+          <article>
+            To create an invoice from scratch, you have two options:
+            <ul>
+                <li>Creating the invoice from scratch.</li>
+                <li>Automatically converting a photo of an existing invoice into XML format.</li>
+            </ul>
+            <br>
+            To <b>create the invoice from scratch</b>, fill in the sections in the form provided. The details you provide will allow us to generate an XML invoice for your invoice. 
+            <br><br>
+            After submitting your form, you will be asked to review the details you have provided. Carefully review your input to to reduce typos or spelling mistakes. Your created invoice will be saved for later access.
+
+            
+            <br><br>
+            If you have an existing invoice that you would like to <b>convert automatically</b> into an XML format, click on the <b>Upload Invoice Photo</b> button on the top right of the page. Please upload a clear photo of the existing invoice for the best results. You will be prompted to fill in any details that could not be extracted from the provided photo.
+            <br><br>
+            After creating your invoice, please proceed to the next stage of the e-invoicing process by <a href="#Validate_invoice">validating</a> the invoice that you have just created.
+
+          </article>
+        </section>
+        <section class="main-section" id="Upload_invoice">
+        <header>Upload Invoice</header>
+          <article>
+              Uploading your invoice will save it to the cloud.
+              <br><br>
+              To upload, create a unique invoice header (this must be unique to differentiate your invoice from your other saved invoices). After pasting in your XML invoice, click on the <b>Upload Invoice</b> button to finalise. Your uploaded invoices will be accessible on the Dashboard.
+          </article>
+        </section>
+        
+        <section class="main-section" id="Remove_invoice">
+          <header>Remove Invoice</header>
+          <article>
+            The invoices you create will be stored in the cloud and can be accessed on the Dashboard of Pi-Invoicing. If you would like to remove an invoice that you have saved, navigate to the <b>Remove Invoice</b> section and enter the heading of the invoice you would like to delete.
+            <br><br>
+            Note: this is an irreversible action.
+          </article>
+        </section>
+        <section class="main-section" id="Validate_invoice">
+          <header>Validate Invoice</header>
+          <article>
+            You can validate your invoice you have created in two ways:
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+
+            Our e-invoicing validation process includes various types of checks:
+            <ul>
+                <li>Syntax</li>
+                <li>Wellformedness</li>
+                <li>BR</li>
+                <li>PEPPOL</li>
+                <li>Schema</li>
+            </ul>
+
+            For efficiency, you have the option of specifying one check that you would like to perform on your invoice. We recommend only doing this if you have previously already checked the other types of validation and that you are certain your invoice is valid.
+            <br><br>
+            We highly recommend performing all the checks when validating your invoice.
+            <br><br>
+            Fetch the invoice that you would like to validate by entering in the name/heading of the invoice you previously created and clicking <b>Get Invoice</b>.
+            <br><br>
+            To validate, click on the <b>Fix Invoice</b> button.
+            <br><br>
+            The left side of the application will preview your created invoice and allow you to make edits to the invoice. The right panel will display the errors in your invoice for reference when fixing the invoice.
+
+
+          </article>
+        </section>
+        
+        </section>
+        <section class="main-section" id="Download_invoice">
+          <header>Download Invoice</header>
+          <article>
+            To download your invoice, enter in the name of your invoice.
+            Your XML invoice will be converted to a PDF format, ready to be downloaded.
+          </article>
+        </section>
+
+        <section class="main-section" id="Send_invoice">
+          <header>Send Invoice</header>
+          <article>
+            To send your invoice automatically, enter in the client email that you would like to send your PDF invoice to and the header/name of your invoice. The email body will be automatically generated.
+          </article>
+        </section>
+      </main>
+      
+</body>
